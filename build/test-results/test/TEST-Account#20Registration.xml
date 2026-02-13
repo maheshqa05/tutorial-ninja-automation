@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Account Registration" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-02-13T04:07:09.589Z" hostname="GAYATHRIGOUTI" time="10.721">
+  <properties/>
+  <testcase name="Successful registration" classname="Account Registration" time="5.419"/>
+  <testcase name="Registration validation errors" classname="Account Registration" time="5.302"/>
+  <system-out><![CDATA[
+Scenario: Successful registration             ?[90m# src/test/resources/features/registration.feature:3?[0m
+Driver =ChromeDriver: chrome on windows (db0c1b044f4074387a28c67108c9567f)
+ChromeDriver: chrome on windows (db0c1b044f4074387a28c67108c9567f)
+  ?[32mGiven ?[0m?[32muser is on registration page?[0m          ?[90m# automation.stepdefs.RegistrationSteps.user_is_on_registration_page()?[0m
+  ?[32mWhen ?[0m?[32muser registers with valid details?[0m      ?[90m# automation.stepdefs.RegistrationSteps.register_with_valid_details()?[0m
+  ?[32mThen ?[0m?[32maccount should be created successfully?[0m ?[90m# automation.stepdefs.RegistrationSteps.verify_account_created()?[0m
+
+Scenario: Registration validation errors               ?[90m# src/test/resources/features/registration.feature:8?[0m
+Driver =ChromeDriver: chrome on windows (533ccfdc5de3213133fd6701ab6890cb)
+ChromeDriver: chrome on windows (533ccfdc5de3213133fd6701ab6890cb)
+  ?[32mGiven ?[0m?[32muser is on registration page?[0m                   ?[90m# automation.stepdefs.RegistrationSteps.user_is_on_registration_page()?[0m
+  ?[32mWhen ?[0m?[32muser submits registration with invalid data?[0m     ?[90m# automation.stepdefs.RegistrationSteps.submit_invalid_registration()?[0m
+  ?[32mThen ?[0m?[32mall registration error messages should be shown?[0m ?[90m# automation.stepdefs.RegistrationSteps.verify_errors()?[0m
+]]></system-out>
+  <system-err><![CDATA[Feb 12, 2026 11:07:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 144
+Feb 12, 2026 11:07:10 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 144.0.7559.133. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.17.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Feb 12, 2026 11:07:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 144
+Feb 12, 2026 11:07:15 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 144.0.7559.133. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.17.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>
